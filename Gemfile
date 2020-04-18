@@ -29,6 +29,9 @@ gem 'jquery-rails'
 # Add bootstrap
 gem 'bootstrap'
 
+# Add Stripe Gem for Payment Collection
+gem 'stripe'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
