@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :articles
 
   post 'checkout', to: 'payments#create'
+  post 'hooks', to: 'payments#receive_webhook'
 end
