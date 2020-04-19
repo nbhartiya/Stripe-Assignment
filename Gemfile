@@ -8,6 +8,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # Use sqlite3 as the database for Active Record
 # b
 gem 'pg'
+gem 'dotenv-rails', :groups => [:development, :test]
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
