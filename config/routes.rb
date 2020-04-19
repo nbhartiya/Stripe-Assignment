@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get 'payments/new'
   root to: 'payments#new'
   resources :articles
+
+  post 'checkout', to: 'payments#create'
 end

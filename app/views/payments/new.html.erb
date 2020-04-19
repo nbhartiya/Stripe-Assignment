@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Neeharika's Plant Store</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,11 +24,10 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
-        <div class="card mt-4" style="width: 18rem;">
+        <div class="card" style="width: 24rem;">
             <%= image_tag("fiddle-leaf-fig.jpg", class: "card-img-top") %>
             <div class="card-body">
-                <h3 class="card-title">Fiddle Leaf Fig</h3>
-                <h4>$12.00</h4>
+                <h3 class="card-title">Fiddle Leaf Fig - $12.00</h3>
                 <p class="card-text">A great starter plant. Pot included.</p>
                 <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
                 4.0 stars
@@ -40,16 +39,30 @@
       <!-- placeholder for Elements -->
       <!-- <div id="card-element"></div>
       <button id="card-button" >Submit Payment</button> -->
-      <form id="payment-form">
-        <div id="card-element">
-          <!-- Elements will create input elements here -->
+      <div class ="sr-root">
+        <div class="sr-main">
+          <form id="payment-form" class="sr-payment-form">
+            <div class="sr-combo-inputs-row">
+              <div id="card-element" class="sr-input sr-card-element" >
+                <!-- Elements will create input elements here -->
+              </div>
+            </div>
+
+            <!-- We'll put the error messages in this element -->
+            <div id="card-errors" class="sr-field-error" role="alert"></div>
+            <button id="card-button" type="submit">
+              <div class="spinner hidden" id="spinner"></div>
+              <span id="button-text">Pay</span><span id="order-amount"></span>
+            </button>
+          </form>
+          <div class="sr-result hidden">
+            <p>Payment completed<br /></p>
+            <pre>
+              <code></code>
+            </pre>
+          </div>
         </div>
-
-        <!-- We'll put the error messages in this element -->
-        <div id="card-errors" role="alert"></div>
-
-        <button id="submit">Pay</button>
-      </form>
+      </div>
     </div>
   </div>
 </div>
