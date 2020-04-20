@@ -4,9 +4,9 @@
 ### How they should set up and test my implementation
 
 #### Option 1 (simpler, recommended approach)
-* Go to https://aqueous-woodland-18926.herokuapp.com/
-* On this page, you can run through the test cases.
-* Go to https://aqueous-woodland-18926.herokuapp.com/payment_intents (or click the "Payment Intents Log" navigation link) to see the registry of all the successful payments that I would need to fulfill
+1. Go to https://aqueous-woodland-18926.herokuapp.com/
+2. On this page, you can run through the test cases.
+3. Go to https://aqueous-woodland-18926.herokuapp.com/payment_intents (or click the "Payment Intents Log" navigation link) to see the registry of all the successful payments that I would need to fulfill
 
 #### Option 2 (more complicated, I do not recommend)
 Depending on your OS, specific ways to download Ruby and Postgres will vary. 
@@ -28,3 +28,5 @@ Depending on your OS, specific ways to download Ruby and Postgres will vary.
   * `STRIPE_API_PUBLISHABLE_KEY= {INSERT YOUR STRIPE PUBLISHABLE KEY HERE}`
   * `STRIPE_WEBHOOK_SECRET = {INSERT YOUR WEBHOOK SIGNING SECRET HERE}`
 11. Visit localhost:3000
+12. On this page, you can run through the test cases.
+13. Go to http://localhost:3000/payment_intents (or click the "Payment Intents Log" navigation link) to see the registry of all the successful payments that I would need to fulfill
