@@ -1,7 +1,7 @@
 # README
 
 ## Instructions for the Reviewer
-### How they should set up and test my implementation
+### How to set up and test my implementation
 
 #### Option 1 (simpler, recommended approach)
 1. Go to https://aqueous-woodland-18926.herokuapp.com/
@@ -30,3 +30,6 @@ Depending on your OS, specific ways to download Ruby and Postgres will vary.
 11. Visit http://localhost:3000
 12. On this page, you can run through the test cases.
 13. Go to http://localhost:3000/payment_intents (or click the "Payment Intents Log" navigation link) to see the registry of all the successful payments that I would need to fulfill
+
+### Friction Log
+A PDF of my friction log is submitted, but [here's a Google Doc](https://docs.google.com/document/d/17QEYvpfA3eqSoeynRMV4Bu-__MiZc28ypODnJAhlpF8/edit?usp=sharing) as well.
