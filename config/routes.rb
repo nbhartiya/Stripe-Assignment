@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   post 'checkout', to: 'payments#create'
   post 'hooks', to: 'payments#receive_webhook'
+  get 'payment_intents', to: 'payments#view_payment_intents'
 end

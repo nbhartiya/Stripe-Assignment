@@ -1,0 +1,18 @@
+<%= render partial: "layouts/navbar" %>
+<table class="table table-striped">
+  <tr>
+    <th>Payment Intent Id</th>
+    <th>Amount</th>
+    <th>Status</th>
+    <th>Last Updated</th>
+  </tr>
+
+  <% @payment_intents.each do |payment_intent| %>
+    <tr>
+      <td><%= payment_intent.payment_intent_id %></td>
+      <td>$<%= sprintf('%.2f', payment_intent.amount/100) %></td>
+      <td><%= payment_intent.status %></td>
+      <td><%= payment_intent.updated_at.in_time_zone("America/Los_Angeles").to_formatted_s(:rfc822) %></td>
+    </tr>
+  <% end %>
+</table>

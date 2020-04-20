@@ -12,6 +12,8 @@ class PaymentsController < ApplicationController
       amount: data['amount'],
       currency: data['currency']
     )
+    @payment_intent = PaymentIntent.new(payment_intent_id:payment_intent['id'],amount:payment_intent['amount'],status:payment_intent['status'])
+    @payment_intent.save
 
     # Send publishable key and PaymentIntent details to client
     response = {
@@ -64,7 +66,20 @@ class PaymentsController < ApplicationController
       puts '❌ Payment failed.'
     end
 
+    @payment_intent = PaymentIntent.find_by_payment_intent_id(data_object['id'])
+    @payment_intent.status = data_object['status']
+    @payment_intent.save
+
     render json: {status: 'success'}.to_json
 
+  end
+
+  def view_payment_intents
+    @payment_intents = PaymentIntent.all.order('updated_at DESC')
+  end
+
+  private
+  def payment_intent_params
+      params.require(:payment_intent).permit(:payment_intent_id, :amount, :status)
   end
 end
