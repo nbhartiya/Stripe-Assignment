@@ -27,6 +27,6 @@ Depending on your OS, specific ways to download Ruby and Postgres will vary.
   * `STRIPE_API_SECRET_KEY={INSERT YOUR STRIPE API SECRET KEY HERE}`
   * `STRIPE_API_PUBLISHABLE_KEY= {INSERT YOUR STRIPE PUBLISHABLE KEY HERE}`
   * `STRIPE_WEBHOOK_SECRET = {INSERT YOUR WEBHOOK SIGNING SECRET HERE}`
-11. Visit localhost:3000
+11. Visit http://localhost:3000
 12. On this page, you can run through the test cases.
 13. Go to http://localhost:3000/payment_intents (or click the "Payment Intents Log" navigation link) to see the registry of all the successful payments that I would need to fulfill
