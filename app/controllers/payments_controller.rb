@@ -75,7 +75,7 @@ class PaymentsController < ApplicationController
   end
 
   def view_payment_intents
-    @payment_intents = PaymentIntent.all.order('updated_at DESC')
+    @payment_intents = PaymentIntent.where('status':'succeeded').order('updated_at DESC')
   end
 
   private
