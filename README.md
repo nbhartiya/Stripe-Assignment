@@ -4,7 +4,8 @@
 ### How to set up and test my implementation
 
 #### Option 1 (simpler, recommended approach)
-1. Go to https://aqueous-woodland-18926.herokuapp.com/
+1. Go to https://aqueous-woodland-18926.herokuapp.com/ 
+Note: Because it's a heroku app, it can take some time to load, but it will load up if you wait!
 2. On this page, you can run through the test cases.
 3. Go to https://aqueous-woodland-18926.herokuapp.com/payment_intents (or click the "Payment Intents Log" navigation link) to see the registry of all the successful payments that I would need to fulfill
 
